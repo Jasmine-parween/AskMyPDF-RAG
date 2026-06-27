@@ -1,0 +1,15 @@
+# Environment
+.env
+venv/
+
+# Vector store (rebuild with ingest.py)
+chroma_db/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
