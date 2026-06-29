@@ -24,8 +24,7 @@ Your question ──► Embed question ──► Retrieve top-k similar chunks
                                     GPT-4o-mini ──► Grounded answer + sources
 ```
 
-The pipeline always includes a **document overview chunk** (title + abstract) regardless of query similarity scores, which ensures general questions like *"What is this PDF about?"* and *"Summarise this document"* always return a useful answer.
-
+The pipeline always includes a **document overview chunk** regardless of query similarity scores, so general questions like *"What is this PDF about?"* and *"Summarise this document"* always return a useful answer. This chunk is an **LLM-generated 4-sentence summary** built from the first 5 pages at ingest time, making it reliable for any document type — research papers, invoices, manuals, or legal contracts.
 ---
 
 ## Prerequisites
